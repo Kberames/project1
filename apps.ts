@@ -1,12 +1,10 @@
-console.log(parseInt("10")+parseInt("10"));
-/*
-let dogName: string = "Sammy";
-let age: number = 2;
-let female: boolean = true;
+function getRedArea(width, height){
+  var areaRect = width * height;
+  var radius = height / 2;
+  var areaCircle = Math.PI * Math.pow(radius,2);
+  var solution = (areaRect - (2 * areaCircle)) / 2;
+  return (solution);
+}
 
-let bobname = "Bob";
-
-console.log(typeof(bobname));
-
-console.log("name= " + dogName + " age= " + age);
-*/
+var answer = getRedArea(20,10);
+console.log ("The solution is " + answer);
